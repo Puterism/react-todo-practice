@@ -66,10 +66,9 @@ export default class Todo extends Component {
   }
 
   handleEdit = id => {
-    this.setState(state => ({
-      ...state,
+    this.setState({
       editing: id,
-    }))
+    })
   }
 
   handleEditSave = (id, title) => {
